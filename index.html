@@ -117,7 +117,6 @@
 
     h2 {
       font-size: 2.8rem;
-      margin-bottom: 1.8rem;
       text-align: center;
       color: var(--dark);
     }
@@ -178,6 +177,36 @@
       font-size: 0.95rem;
     }
 
+    .partners {
+      background: var(--light);
+      text-align: center;
+    }
+
+    .partners-grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      margin-top: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .partner-logo {
+      max-height: 80px;
+      width: auto;
+      object-fit: contain;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+
+    .partner-logo:hover {
+      opacity: 1;
+    }
+
+    .partner-link {
+      display: inline-block;
+    }
+
     @media (max-width: 768px) {
       header {
         height: 80px;
@@ -194,6 +223,8 @@
       .newsletter form { flex-direction: column; }
       .newsletter input { border-radius: 9999px; margin-bottom: 1rem; }
       .newsletter button { border-radius: 9999px; }
+      .partners-grid { gap: 2rem; }
+      .partner-logo { max-height: 60px; }
     }
   </style>
 </head>
@@ -212,10 +243,8 @@
 <section class="hero">
   <div class="hero-content">
     <img class="hero-logo" src="Logo_rectangle.png" alt="Independent Media Entrepreneurship Foundation logo">
-    <h1>Empowering Independent Media</h1>
-    <p class="subtitle">
-      The Independent Media Entrepreneurship Foundation is dedicated to promoting independent journalism and media literacy. We believe that a well-informed society is the backbone of democracy, and we strive to empower voices that need to be heard.
-    </p>
+    <h2>Empowering Media Markets on the Balkans</h2>
+    <h3>Supporting independent media in Bulgaria and South-Eastern Europe</h3>
     <a href="#join" class="btn">Join Our Mission →</a>
   </div>
 </section>
@@ -229,6 +258,18 @@
 <section id="mission" class="mission">
   <h2>Our Mission</h2>
   <p>The Independent Media Entrepreneurship Foundation is dedicated to promoting independent journalism and media literacy. We believe that a well-informed society is the backbone of democracy, and we strive to empower voices that need to be heard.</p>
+</section>
+
+<section id="partners" class="partners">
+  <h2>Our Partners</h2>
+  <div class="partners-grid">
+    <a href="https://www.vlastta.bg/" target="_blank" class="partner-link">
+      <img src="vlastta-na-dumite.png" alt="Vlasta na Dumite" class="partner-logo">
+    </a>
+    <a href="https://newshubbg.com/" target="_blank" class="partner-link">
+      <h1 class="site-title" style="font-size: 2.2rem; color: #fff; background: #000; font-weight: 900; margin: 0; font-family: Arial, sans-serif; padding: 0.2rem 2rem 0 2rem; text-transform: uppercase; letter-spacing: 0.05em;">newshubbg.com</h1>
+    </a>
+  </div>
 </section>
 
 <section id="join" class="cta">
